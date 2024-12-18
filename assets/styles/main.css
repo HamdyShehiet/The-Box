@@ -78,6 +78,9 @@ h3.title{
 .grid{
     display: grid;
 }
+.in-flex{
+    display: inline-flex;
+}
 .description{
     margin: 18px 0;
     line-height: 1.6;
