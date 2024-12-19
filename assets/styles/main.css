@@ -59,12 +59,12 @@ img{
     max-width: 100%;
 }
 h1{
-    font-size: var(--fs-72px);
     font-size: clamp(50px,8vw,var(--fs-72px));
     color: var(--title-color);
 }
 h2.title{
     font-size: var( --fs-36px);
+    font-size: clamp(30px,5vw,var(--fs-36px));
     color: var(--title-color);
 }
 h3.title{
@@ -87,7 +87,6 @@ h3.title{
     margin: 16px 0;
     line-height: 1.6;
     font-size: var(--fs-16px);
-    color: var(--text-color);
 }
 .text-center{
     text-align: center;
@@ -105,6 +104,7 @@ h3.title{
     display: inline-flex;
     padding: 10px 20px;
     font-size: var(--fs-16px);
+    font-weight: 600;
     border-radius: 4px;
 }
 .clr-white{
@@ -202,4 +202,34 @@ section{
 }
 .reputation .container .reputation-list .col .image-icon{
     height: 55px;
+}
+.reputation .container .reputation-list .col p.description{
+    color: var(--text-color);
+}
+.about-us .container .info{
+    padding: 40px;
+    padding: clamp(20px,5vw,40px);
+    border-radius: 2px;
+    color: var(--clr-white);
+    background-color: var(--main-color);
+}
+.about-us .container .info h2.title{
+    color: var(--clr-white);
+}
+.about-us .container .info a.special-btn{
+    margin-top: 15px;
+    background-color: var(--clr-white);
+    color: var(--main-color);
+}
+@media (min-width:1200px) {
+    .about-us {
+        position: relative;
+    }
+    .about-us .container .info{
+        position: absolute;
+        top: 50%;
+        right: 80px;
+        transform: translateY(-50%);
+        max-width: 400px;
+    }
 }
