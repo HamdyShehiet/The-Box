@@ -13,7 +13,7 @@
     --fs-72px: 72px;
     --fs-36px: 36px;
     --fs-22px: 22px;
-    --fs-18px: 18px;
+    --fs-20px: 20px;
     --fs-16px: 16px;
     --section-padding: 60px;
 }
@@ -68,7 +68,7 @@ h2.title{
     color: var(--title-color);
 }
 h3.title{
-    font-size: var(--fs-22px);
+    font-size: var(--fs-20px);
     color: var(--title-color);
 }
 /* Utility Classes */
@@ -178,10 +178,24 @@ section{
 }
 .hero{
     height: 100vh;
-    background: url(../images/hero.webp) no-repeat right;
+    background: url(../images/hero.webp)  right;
 }
 .hero .container{
-    display: flex;
     align-items: center;
     height: 100%;
+}
+.reputation .container .reputation-list{
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.reputation .container .reputation-list .col{
+    max-width: 320px;
+    padding: 18px;
+    border-radius: 5px;
+    border: 1px solid var(--alt-text-color);
+    box-shadow: 0 0 20px 2px rgb(0 0 0 / .02);
+}
+.reputation .container .reputation-list .col .image-icon{
+    height: 60px;
 }
