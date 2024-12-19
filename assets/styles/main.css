@@ -105,7 +105,7 @@ h3.title{
     display: inline-flex;
     padding: 10px 20px;
     font-size: var(--fs-16px);
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 4px;
 }
 .clr-white{
@@ -391,10 +391,36 @@ section{
 }
 .consultation{
     min-height: 45vh;
-    background: url(../images/image-2.webp) no-repeat 100% 100%/contain;
+    background: url(../images/image-2.webp) no-repeat center/cover;
     background-attachment: fixed;
 }
 .consultation .container{
     align-items: center;
     justify-content: space-between;
+}
+.consultation .container .info h2{
+    font-size: clamp(var(--fs-22px),5vw,var(--fs-36px));
+    color: var(--clr-white);
+}
+.consultation .container .info p{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: calc(var(--fs-16px));
+    color: var(--clr-white);
+}
+.consultation .container .info p a{
+    text-decoration: underline;
+}
+.consultation .container .get-consult a{
+    border: 2px solid var(--clr-white);
+    color: var(--clr-white);
+}
+@media (max-width:992px) {
+    .consultation .container .info{
+        text-align: center;
+    }
+    .consultation .container .get-consult {
+        margin: auto;
+    }
 }
