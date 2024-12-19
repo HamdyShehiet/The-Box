@@ -84,7 +84,7 @@ h3.title{
     align-items: center;
 }
 .description{
-    margin: 18px 0;
+    margin: 16px 0;
     line-height: 1.6;
     font-size: var(--fs-16px);
     color: var(--text-color);
@@ -178,7 +178,7 @@ section{
 }
 .hero{
     height: 100vh;
-    background: url(../images/hero.webp)  right;
+    background: url(../images/hero.webp)  center;
 }
 .hero .container{
     align-items: center;
@@ -197,5 +197,5 @@ section{
     box-shadow: 0 0 20px 2px rgb(0 0 0 / .02);
 }
 .reputation .container .reputation-list .col .image-icon{
-    height: 60px;
+    height: 55px;
 }
