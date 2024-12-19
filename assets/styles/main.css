@@ -196,6 +196,7 @@ section{
 }
 .reputation .container .reputation-list .col{
     max-width: 320px;
+    width: 100%;
     padding: 18px;
     border-radius: 5px;
     border: 1px solid var(--alt-text-color);
