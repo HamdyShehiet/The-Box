@@ -60,6 +60,7 @@ img{
 }
 h1{
     font-size: var(--fs-72px);
+    font-size: clamp(50px,8vw,var(--fs-72px));
     color: var(--title-color);
 }
 h2.title{
@@ -171,4 +172,16 @@ header .container nav ul li a{
     header .container nav ul li a.contact-us{
         color: var(--secondary-color);
     }
+}
+section{
+    padding: var(--section-padding) 0;
+}
+.hero{
+    height: 100vh;
+    background: url(../images/hero.webp) no-repeat right;
+}
+.hero .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
