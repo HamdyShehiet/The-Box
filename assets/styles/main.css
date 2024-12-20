@@ -53,7 +53,7 @@ a{
 }
 input,
 button{
-    border: none;
+    /* border: none; */
     outline: none;
 }
 img{
