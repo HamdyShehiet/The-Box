@@ -395,6 +395,7 @@ section{
     background-attachment: fixed;
 }
 .consultation .container{
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -416,7 +417,7 @@ section{
     border: 2px solid var(--clr-white);
     color: var(--clr-white);
 }
-@media (max-width:992px) {
+@media (max-width:991px) {
     .consultation .container .info{
         text-align: center;
     }
