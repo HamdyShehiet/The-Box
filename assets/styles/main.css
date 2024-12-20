@@ -52,8 +52,10 @@ a{
     text-decoration: none;
 }
 input,
-button{
-    /* border: none; */
+button,
+textarea{
+    font: inherit;
+    border: none;
     outline: none;
 }
 img{
@@ -295,7 +297,6 @@ section{
     padding: 15px;
     border-radius: 4px;
     border: 1px solid var(--alt-text-color);
-
     box-shadow: 0 0 8px 2px rgb(0 0 0 / .1);
     background-color: var(--clr-white);
 }
@@ -466,4 +467,54 @@ section{
     .projects .container .projects-category .project-list{
         justify-content: end;
     }
+}
+.contact-us {
+    background-color: var(--clr-whitesmoke);
+}
+.contact-us .container p.description{
+    color: var(--text-color);
+}
+.contact-us .container .form-box{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    color: var(--text-color);
+    font-size: var(--fs-16px);
+}
+.contact-us .container .form-box .row{
+    justify-content: center;
+    gap:10px 20px;
+}
+.contact-us .container .form-box .row input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--alt-text-color);
+}
+@media (min-width:992px) {
+    .contact-us .container .form-box .row input{
+        width: 280px;
+    }
+}
+.contact-us .container .form-box textarea{
+    width: 100%;
+    min-height: 130px;
+    margin-top: 10px;
+    padding:15px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--alt-text-color);
+}
+.contact-us .container .form-box span{
+    display: block;
+    margin-bottom: 25px;
+}
+.contact-us .container .form-box .submit{
+    text-align: center;
+}
+.contact-us .container .form-box .submit input{
+    min-width: 100px;
+    width: 45%;
+    background-color: var(--main-color);
+    color: var(--clr-white);
 }
